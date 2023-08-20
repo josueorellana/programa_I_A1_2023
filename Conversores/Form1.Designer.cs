@@ -68,6 +68,7 @@ namespace Conversores
             this.cboTipoConversor.Size = new System.Drawing.Size(168, 21);
             this.cboTipoConversor.TabIndex = 6;
             this.cboTipoConversor.SelectedIndexChanged += new System.EventHandler(this.cboTipoConversor_SelectedIndexChanged);
+            this.cboTipoConversor.TextChanged += new System.EventHandler(this.cboTipoConversor_TextChanged);
             // 
             // lblDeConversor
             // 

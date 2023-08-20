@@ -51,11 +51,16 @@ namespace Conversores
 
         private void cboTipoConversor_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+        }
+
+        private void cboTipoConversor_TextChanged(object sender, EventArgs e)
+        {
             cboDeConversor.Items.Clear();
-            cboDeConversor.Items.AddRange(cboTipoConversor[cboTipoConversor.SelectedIndex]);
+            cboDeConversor.Items.AddRange(tiposConversores[cboTipoConversor.SelectedIndex]);
 
             cboAConversor.Items.Clear();
-            cboAConversor.Items.AddRange(cboTipoConversor[cboTipoConversor.SelectedIndex]);
+            cboAConversor.Items.AddRange(tiposConversores[cboTipoConversor.SelectedIndex]);
         }
     }
 }
