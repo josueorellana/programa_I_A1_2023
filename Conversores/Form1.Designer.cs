@@ -37,6 +37,7 @@ namespace Conversores
             this.cboAConversor = new System.Windows.Forms.ComboBox();
             this.lblCantidadConversor = new System.Windows.Forms.Label();
             this.txtCantidadConversor = new System.Windows.Forms.TextBox();
+            this.lblRespuestaConversor = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTipoConversor
@@ -131,11 +132,22 @@ namespace Conversores
             this.txtCantidadConversor.Size = new System.Drawing.Size(126, 20);
             this.txtCantidadConversor.TabIndex = 12;
             // 
+            // lblRespuestaConversor
+            // 
+            this.lblRespuestaConversor.AutoSize = true;
+            this.lblRespuestaConversor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRespuestaConversor.Location = new System.Drawing.Point(304, 331);
+            this.lblRespuestaConversor.Name = "lblRespuestaConversor";
+            this.lblRespuestaConversor.Size = new System.Drawing.Size(104, 24);
+            this.lblRespuestaConversor.TabIndex = 13;
+            this.lblRespuestaConversor.Text = "Respuesta:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 443);
+            this.Controls.Add(this.lblRespuestaConversor);
             this.Controls.Add(this.txtCantidadConversor);
             this.Controls.Add(this.lblCantidadConversor);
             this.Controls.Add(this.cboAConversor);
@@ -161,6 +173,7 @@ namespace Conversores
         private System.Windows.Forms.ComboBox cboAConversor;
         private System.Windows.Forms.Label lblCantidadConversor;
         private System.Windows.Forms.TextBox txtCantidadConversor;
+        private System.Windows.Forms.Label lblRespuestaConversor;
     }
 }
 
