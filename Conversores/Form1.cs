@@ -13,11 +13,11 @@ namespace Conversores
     public partial class Conversor : Form
     {
         String[][] tiposConversores = new string[][]{
-            new String[] {"Dolar", "Quetzal", "Lempira", "Cordoba", "Colon SV", "Colon CR", "Yenes", "Rupias Indias", "Libras Esterlinas" }, // Moneda
-            new String[]{"Libras", "Miligramos", "Gramos", "Onzas", "Tonelada Corta" }, // Masa
-            new String[]{"Litro" }, // Volumen
-            new String[]{"Metro", "Milimetro", "Centimetro", "Pulgada", "Pies", "Varas", "Yardas", "Kilometros", "Millas" }// Longitud
-            // Matriz multidimencional
+    new String[] {"Dolar", "Quetzal", "Lempira", "Cordoba", "Colon SV", "Colon CR", "Yenes", "Rupias Indias", "Libras Esterlinas" }, // Moneda
+    new String[]{"Libras", "Miligramos", "Gramos", "Onzas", "Tonelada Corta" }, // Masa
+    new String[]{"Litro" }, // Volumen
+    new String[]{"Metro", "Milimetro", "Centimetro", "Pulgada", "Pies", "Varas", "Yardas", "Kilometros", "Millas" } // Longitud
+}; // Matriz multidimensional
         public Conversor()
         {
             InitializeComponent();
@@ -61,6 +61,51 @@ namespace Conversores
 
             cboAConversor.Items.Clear();
             cboAConversor.Items.AddRange(tiposConversores[cboTipoConversor.SelectedIndex]);
+        }
+
+        private void txtCantidadConversor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRespuestaConversor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCantidadConversor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboAConversor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAConversor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboDeConversor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDeConversor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTipoConversor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTituloConversor_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

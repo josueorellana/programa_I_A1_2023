@@ -51,6 +51,7 @@ namespace Conversores
             this.lblTipoConversor.Size = new System.Drawing.Size(53, 24);
             this.lblTipoConversor.TabIndex = 5;
             this.lblTipoConversor.Text = "Tipo:";
+            this.lblTipoConversor.Click += new System.EventHandler(this.lblTipoConversor_Click);
             // 
             // cboTipoConversor
             // 
@@ -79,6 +80,7 @@ namespace Conversores
             this.lblDeConversor.Size = new System.Drawing.Size(39, 24);
             this.lblDeConversor.TabIndex = 7;
             this.lblDeConversor.Text = "De:";
+            this.lblDeConversor.Click += new System.EventHandler(this.lblDeConversor_Click);
             // 
             // cboDeConversor
             // 
@@ -88,6 +90,7 @@ namespace Conversores
             this.cboDeConversor.Name = "cboDeConversor";
             this.cboDeConversor.Size = new System.Drawing.Size(168, 21);
             this.cboDeConversor.TabIndex = 8;
+            this.cboDeConversor.SelectedIndexChanged += new System.EventHandler(this.cboDeConversor_SelectedIndexChanged);
             // 
             // lblAConversor
             // 
@@ -98,6 +101,7 @@ namespace Conversores
             this.lblAConversor.Size = new System.Drawing.Size(28, 24);
             this.lblAConversor.TabIndex = 9;
             this.lblAConversor.Text = "A:";
+            this.lblAConversor.Click += new System.EventHandler(this.lblAConversor_Click);
             // 
             // cboAConversor
             // 
@@ -107,6 +111,7 @@ namespace Conversores
             this.cboAConversor.Name = "cboAConversor";
             this.cboAConversor.Size = new System.Drawing.Size(168, 21);
             this.cboAConversor.TabIndex = 10;
+            this.cboAConversor.SelectedIndexChanged += new System.EventHandler(this.cboAConversor_SelectedIndexChanged);
             // 
             // lblCantidadConversor
             // 
@@ -117,6 +122,7 @@ namespace Conversores
             this.lblCantidadConversor.Size = new System.Drawing.Size(89, 24);
             this.lblCantidadConversor.TabIndex = 11;
             this.lblCantidadConversor.Text = "Cantidad:";
+            this.lblCantidadConversor.Click += new System.EventHandler(this.lblCantidadConversor_Click);
             // 
             // txtCantidadConversor
             // 
@@ -124,6 +130,7 @@ namespace Conversores
             this.txtCantidadConversor.Name = "txtCantidadConversor";
             this.txtCantidadConversor.Size = new System.Drawing.Size(126, 20);
             this.txtCantidadConversor.TabIndex = 12;
+            this.txtCantidadConversor.TextChanged += new System.EventHandler(this.txtCantidadConversor_TextChanged);
             // 
             // lblRespuestaConversor
             // 
@@ -134,6 +141,7 @@ namespace Conversores
             this.lblRespuestaConversor.Size = new System.Drawing.Size(119, 24);
             this.lblRespuestaConversor.TabIndex = 13;
             this.lblRespuestaConversor.Text = "Respuesta: ?";
+            this.lblRespuestaConversor.Click += new System.EventHandler(this.lblRespuestaConversor_Click);
             // 
             // btnConvertirConversor
             // 
@@ -154,6 +162,7 @@ namespace Conversores
             this.lblTituloConversor.Size = new System.Drawing.Size(87, 21);
             this.lblTituloConversor.TabIndex = 15;
             this.lblTituloConversor.Text = "Conversor";
+            this.lblTituloConversor.Click += new System.EventHandler(this.lblTituloConversor_Click);
             // 
             // Conversor
             // 
