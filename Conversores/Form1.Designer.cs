@@ -38,6 +38,7 @@ namespace Conversores
             this.lblCantidadConversor = new System.Windows.Forms.Label();
             this.txtCantidadConversor = new System.Windows.Forms.TextBox();
             this.lblRespuestaConversor = new System.Windows.Forms.Label();
+            this.btnConvertirConversor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTipoConversor
@@ -142,11 +143,21 @@ namespace Conversores
             this.lblRespuestaConversor.TabIndex = 13;
             this.lblRespuestaConversor.Text = "Respuesta: ?";
             // 
+            // btnConvertirConversor
+            // 
+            this.btnConvertirConversor.Location = new System.Drawing.Point(84, 311);
+            this.btnConvertirConversor.Name = "btnConvertirConversor";
+            this.btnConvertirConversor.Size = new System.Drawing.Size(150, 69);
+            this.btnConvertirConversor.TabIndex = 14;
+            this.btnConvertirConversor.Text = "CONVERTIR";
+            this.btnConvertirConversor.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 443);
+            this.Controls.Add(this.btnConvertirConversor);
             this.Controls.Add(this.lblRespuestaConversor);
             this.Controls.Add(this.txtCantidadConversor);
             this.Controls.Add(this.lblCantidadConversor);
@@ -174,6 +185,7 @@ namespace Conversores
         private System.Windows.Forms.Label lblCantidadConversor;
         private System.Windows.Forms.TextBox txtCantidadConversor;
         private System.Windows.Forms.Label lblRespuestaConversor;
+        private System.Windows.Forms.Button btnConvertirConversor;
     }
 }
 
