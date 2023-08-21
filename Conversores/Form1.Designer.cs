@@ -35,6 +35,7 @@ namespace Conversores
             this.cboDeConversor = new System.Windows.Forms.ComboBox();
             this.lblAConversor = new System.Windows.Forms.Label();
             this.cboAConversor = new System.Windows.Forms.ComboBox();
+            this.lblCantidadConversor = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTipoConversor
@@ -112,11 +113,22 @@ namespace Conversores
             this.cboAConversor.Size = new System.Drawing.Size(168, 21);
             this.cboAConversor.TabIndex = 10;
             // 
+            // lblCantidadConversor
+            // 
+            this.lblCantidadConversor.AutoSize = true;
+            this.lblCantidadConversor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadConversor.Location = new System.Drawing.Point(43, 245);
+            this.lblCantidadConversor.Name = "lblCantidadConversor";
+            this.lblCantidadConversor.Size = new System.Drawing.Size(89, 24);
+            this.lblCantidadConversor.TabIndex = 11;
+            this.lblCantidadConversor.Text = "Cantidad:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 443);
+            this.Controls.Add(this.lblCantidadConversor);
             this.Controls.Add(this.cboAConversor);
             this.Controls.Add(this.lblAConversor);
             this.Controls.Add(this.cboDeConversor);
@@ -138,6 +150,7 @@ namespace Conversores
         private System.Windows.Forms.ComboBox cboDeConversor;
         private System.Windows.Forms.Label lblAConversor;
         private System.Windows.Forms.ComboBox cboAConversor;
+        private System.Windows.Forms.Label lblCantidadConversor;
     }
 }
 
