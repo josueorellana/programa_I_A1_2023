@@ -1,7 +1,7 @@
 ﻿
 namespace Conversores
 {
-    partial class Form1
+    partial class Conversor
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -53,6 +53,7 @@ namespace Conversores
             // 
             // cboTipoConversor
             // 
+            this.cboTipoConversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoConversor.FormattingEnabled = true;
             this.cboTipoConversor.Items.AddRange(new object[] {
             "Monedas",
@@ -78,14 +79,8 @@ namespace Conversores
             // 
             // cboDeConversor
             // 
+            this.cboDeConversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDeConversor.FormattingEnabled = true;
-            this.cboDeConversor.Items.AddRange(new object[] {
-            "Monedas",
-            "Masa ",
-            "Volumen",
-            "Longitud",
-            "Almacenamiento",
-            "Tiempo"});
             this.cboDeConversor.Location = new System.Drawing.Point(158, 109);
             this.cboDeConversor.Name = "cboDeConversor";
             this.cboDeConversor.Size = new System.Drawing.Size(168, 21);
@@ -103,6 +98,7 @@ namespace Conversores
             // 
             // cboAConversor
             // 
+            this.cboAConversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboAConversor.FormattingEnabled = true;
             this.cboAConversor.Items.AddRange(new object[] {
             "Monedas",
@@ -151,12 +147,13 @@ namespace Conversores
             this.btnConvertirConversor.TabIndex = 14;
             this.btnConvertirConversor.Text = "CONVERTIR";
             this.btnConvertirConversor.UseVisualStyleBackColor = true;
+            this.btnConvertirConversor.Click += new System.EventHandler(this.btnConvertirConversor_Click);
             // 
-            // Form1
+            // Conversor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 443);
+            this.ClientSize = new System.Drawing.Size(569, 412);
             this.Controls.Add(this.btnConvertirConversor);
             this.Controls.Add(this.lblRespuestaConversor);
             this.Controls.Add(this.txtCantidadConversor);
@@ -167,7 +164,7 @@ namespace Conversores
             this.Controls.Add(this.lblDeConversor);
             this.Controls.Add(this.cboTipoConversor);
             this.Controls.Add(this.lblTipoConversor);
-            this.Name = "Form1";
+            this.Name = "Conversor";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
