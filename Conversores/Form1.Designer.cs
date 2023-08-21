@@ -100,13 +100,6 @@ namespace Conversores
             // 
             this.cboAConversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboAConversor.FormattingEnabled = true;
-            this.cboAConversor.Items.AddRange(new object[] {
-            "Monedas",
-            "Masa ",
-            "Volumen",
-            "Longitud",
-            "Almacenamiento",
-            "Tiempo"});
             this.cboAConversor.Location = new System.Drawing.Point(158, 171);
             this.cboAConversor.Name = "cboAConversor";
             this.cboAConversor.Size = new System.Drawing.Size(168, 21);
