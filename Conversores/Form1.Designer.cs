@@ -138,9 +138,9 @@ namespace Conversores
             this.lblRespuestaConversor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRespuestaConversor.Location = new System.Drawing.Point(304, 331);
             this.lblRespuestaConversor.Name = "lblRespuestaConversor";
-            this.lblRespuestaConversor.Size = new System.Drawing.Size(104, 24);
+            this.lblRespuestaConversor.Size = new System.Drawing.Size(119, 24);
             this.lblRespuestaConversor.TabIndex = 13;
-            this.lblRespuestaConversor.Text = "Respuesta:";
+            this.lblRespuestaConversor.Text = "Respuesta: ?";
             // 
             // Form1
             // 
