@@ -8,6 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// integrantes del equipo
+
+// Wilbert Jose Giron Perez
+// Andrea Margarita Hernandez Arevalo
+// Yaritza Marcela Jimenez Escobar
+// Josue David Morales Orellana
 namespace Conversores
 {
     public partial class Conversor : Form
