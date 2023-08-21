@@ -36,6 +36,7 @@ namespace Conversores
             this.lblAConversor = new System.Windows.Forms.Label();
             this.cboAConversor = new System.Windows.Forms.ComboBox();
             this.lblCantidadConversor = new System.Windows.Forms.Label();
+            this.txtCantidadConversor = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblTipoConversor
@@ -123,11 +124,19 @@ namespace Conversores
             this.lblCantidadConversor.TabIndex = 11;
             this.lblCantidadConversor.Text = "Cantidad:";
             // 
+            // txtCantidadConversor
+            // 
+            this.txtCantidadConversor.Location = new System.Drawing.Point(138, 249);
+            this.txtCantidadConversor.Name = "txtCantidadConversor";
+            this.txtCantidadConversor.Size = new System.Drawing.Size(126, 20);
+            this.txtCantidadConversor.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 443);
+            this.Controls.Add(this.txtCantidadConversor);
             this.Controls.Add(this.lblCantidadConversor);
             this.Controls.Add(this.cboAConversor);
             this.Controls.Add(this.lblAConversor);
@@ -151,6 +160,7 @@ namespace Conversores
         private System.Windows.Forms.Label lblAConversor;
         private System.Windows.Forms.ComboBox cboAConversor;
         private System.Windows.Forms.Label lblCantidadConversor;
+        private System.Windows.Forms.TextBox txtCantidadConversor;
     }
 }
 
