@@ -39,6 +39,7 @@ namespace Conversores
             this.txtCantidadConversor = new System.Windows.Forms.TextBox();
             this.lblRespuestaConversor = new System.Windows.Forms.Label();
             this.btnConvertirConversor = new System.Windows.Forms.Button();
+            this.lblTituloConversor = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTipoConversor
@@ -142,11 +143,22 @@ namespace Conversores
             this.btnConvertirConversor.UseVisualStyleBackColor = true;
             this.btnConvertirConversor.Click += new System.EventHandler(this.btnConvertirConversor_Click);
             // 
+            // lblTituloConversor
+            // 
+            this.lblTituloConversor.AutoSize = true;
+            this.lblTituloConversor.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloConversor.Location = new System.Drawing.Point(224, 9);
+            this.lblTituloConversor.Name = "lblTituloConversor";
+            this.lblTituloConversor.Size = new System.Drawing.Size(87, 21);
+            this.lblTituloConversor.TabIndex = 15;
+            this.lblTituloConversor.Text = "Conversor";
+            // 
             // Conversor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(569, 412);
+            this.Controls.Add(this.lblTituloConversor);
             this.Controls.Add(this.btnConvertirConversor);
             this.Controls.Add(this.lblRespuestaConversor);
             this.Controls.Add(this.txtCantidadConversor);
@@ -176,6 +188,7 @@ namespace Conversores
         private System.Windows.Forms.TextBox txtCantidadConversor;
         private System.Windows.Forms.Label lblRespuestaConversor;
         private System.Windows.Forms.Button btnConvertirConversor;
+        private System.Windows.Forms.Label lblTituloConversor;
     }
 }
 
