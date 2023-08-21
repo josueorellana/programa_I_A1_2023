@@ -33,6 +33,7 @@ namespace Conversores
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.lblTipoConversor = new System.Windows.Forms.Label();
+            this.cboTipoConversor = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button1
@@ -68,11 +69,27 @@ namespace Conversores
             this.lblTipoConversor.TabIndex = 5;
             this.lblTipoConversor.Text = "Tipo:";
             // 
+            // cboTipoConversor
+            // 
+            this.cboTipoConversor.FormattingEnabled = true;
+            this.cboTipoConversor.Items.AddRange(new object[] {
+            "Monedas",
+            "Masa ",
+            "Volumen",
+            "Longitud",
+            "Almacenamiento",
+            "Tiempo"});
+            this.cboTipoConversor.Location = new System.Drawing.Point(158, 54);
+            this.cboTipoConversor.Name = "cboTipoConversor";
+            this.cboTipoConversor.Size = new System.Drawing.Size(168, 21);
+            this.cboTipoConversor.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(551, 442);
+            this.Controls.Add(this.cboTipoConversor);
             this.Controls.Add(this.lblTipoConversor);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -91,6 +108,7 @@ namespace Conversores
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lblTipoConversor;
+        private System.Windows.Forms.ComboBox cboTipoConversor;
     }
 }
 
