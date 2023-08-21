@@ -29,35 +29,10 @@ namespace Conversores
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.lblTipoConversor = new System.Windows.Forms.Label();
             this.cboTipoConversor = new System.Windows.Forms.ComboBox();
+            this.lblDeConversor = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(183, 146);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(289, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(313, 215);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(174, 20);
-            this.textBox2.TabIndex = 4;
             // 
             // lblTipoConversor
             // 
@@ -84,16 +59,24 @@ namespace Conversores
             this.cboTipoConversor.Size = new System.Drawing.Size(168, 21);
             this.cboTipoConversor.TabIndex = 6;
             // 
+            // lblDeConversor
+            // 
+            this.lblDeConversor.AutoSize = true;
+            this.lblDeConversor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeConversor.Location = new System.Drawing.Point(89, 106);
+            this.lblDeConversor.Name = "lblDeConversor";
+            this.lblDeConversor.Size = new System.Drawing.Size(39, 24);
+            this.lblDeConversor.TabIndex = 7;
+            this.lblDeConversor.Text = "De:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(551, 442);
+            this.Controls.Add(this.lblDeConversor);
             this.Controls.Add(this.cboTipoConversor);
             this.Controls.Add(this.lblTipoConversor);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -103,12 +86,9 @@ namespace Conversores
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lblTipoConversor;
         private System.Windows.Forms.ComboBox cboTipoConversor;
+        private System.Windows.Forms.Label lblDeConversor;
     }
 }
 
