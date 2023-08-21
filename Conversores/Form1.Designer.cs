@@ -33,6 +33,7 @@ namespace Conversores
             this.cboTipoConversor = new System.Windows.Forms.ComboBox();
             this.lblDeConversor = new System.Windows.Forms.Label();
             this.cboDeConversor = new System.Windows.Forms.ComboBox();
+            this.lblAConversor = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTipoConversor
@@ -85,11 +86,22 @@ namespace Conversores
             this.cboDeConversor.Size = new System.Drawing.Size(168, 21);
             this.cboDeConversor.TabIndex = 8;
             // 
+            // lblAConversor
+            // 
+            this.lblAConversor.AutoSize = true;
+            this.lblAConversor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAConversor.Location = new System.Drawing.Point(89, 171);
+            this.lblAConversor.Name = "lblAConversor";
+            this.lblAConversor.Size = new System.Drawing.Size(28, 24);
+            this.lblAConversor.TabIndex = 9;
+            this.lblAConversor.Text = "A:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 442);
+            this.ClientSize = new System.Drawing.Size(456, 443);
+            this.Controls.Add(this.lblAConversor);
             this.Controls.Add(this.cboDeConversor);
             this.Controls.Add(this.lblDeConversor);
             this.Controls.Add(this.cboTipoConversor);
@@ -107,6 +119,7 @@ namespace Conversores
         private System.Windows.Forms.ComboBox cboTipoConversor;
         private System.Windows.Forms.Label lblDeConversor;
         private System.Windows.Forms.ComboBox cboDeConversor;
+        private System.Windows.Forms.Label lblAConversor;
     }
 }
 
