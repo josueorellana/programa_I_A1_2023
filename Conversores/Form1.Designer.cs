@@ -32,6 +32,7 @@ namespace Conversores
             this.lblTipoConversor = new System.Windows.Forms.Label();
             this.cboTipoConversor = new System.Windows.Forms.ComboBox();
             this.lblDeConversor = new System.Windows.Forms.Label();
+            this.cboDeConversor = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblTipoConversor
@@ -69,11 +70,27 @@ namespace Conversores
             this.lblDeConversor.TabIndex = 7;
             this.lblDeConversor.Text = "De:";
             // 
+            // cboDeConversor
+            // 
+            this.cboDeConversor.FormattingEnabled = true;
+            this.cboDeConversor.Items.AddRange(new object[] {
+            "Monedas",
+            "Masa ",
+            "Volumen",
+            "Longitud",
+            "Almacenamiento",
+            "Tiempo"});
+            this.cboDeConversor.Location = new System.Drawing.Point(158, 109);
+            this.cboDeConversor.Name = "cboDeConversor";
+            this.cboDeConversor.Size = new System.Drawing.Size(168, 21);
+            this.cboDeConversor.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(551, 442);
+            this.Controls.Add(this.cboDeConversor);
             this.Controls.Add(this.lblDeConversor);
             this.Controls.Add(this.cboTipoConversor);
             this.Controls.Add(this.lblTipoConversor);
@@ -89,6 +106,7 @@ namespace Conversores
         private System.Windows.Forms.Label lblTipoConversor;
         private System.Windows.Forms.ComboBox cboTipoConversor;
         private System.Windows.Forms.Label lblDeConversor;
+        private System.Windows.Forms.ComboBox cboDeConversor;
     }
 }
 
