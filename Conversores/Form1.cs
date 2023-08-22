@@ -13,11 +13,12 @@ namespace Conversores
     public partial class Conversor : Form
     {
         String[][] tiposConversores = new string[][]{
-    new String[] {"Dolar", "Quetzal", "Lempira", "Cordoba", "Colon SV", "Colon CR", "Yenes", "Rupias Indias", "Libras Esterlinas" }, // Moneda
-    new String[]{"Libras", "Miligramos", "Gramos", "Onzas", "Tonelada Corta" }, // Masa
-    new String[]{"Litro" }, // Volumen
-    new String[]{"Metro", "Milimetro", "Centimetro", "Pulgada", "Pies", "Varas", "Yardas", "Kilometros", "Millas" } // Longitud
-}; // Matriz multidimensional
+            new string[] {"Dolar", "Quetzal", "Lempira", "Cordoba", "Colon SV", "Colon CR", "Yenes", "Rupias Indias", "Libras Esterlinas" }, // Moneda
+            new string[]{"Libras", "Miligramos", "Gramos", "Onzas", "Tonelada Corta" }, // Masa
+            new string[]{"Litro", "Mililitro", "Metro Cubico", "Pie Cubico", "Pulgada Cubica" }, // Volumen
+            new string[]{"Metro", "Milimetro", "Centimetro", "Pulgada", "Pies", "Varas", "Yardas", "Kilometros", "Millas" }, // Longitud
+            new string[]{"Microsegundo", "Milisegundo", "Segundo", "Minuto", "Hora", "Dia", "Semana", "Mes", "Año", "Decada", "Siglo" } // Tiempo
+        };
         public Conversor()
         {
             InitializeComponent();
@@ -40,12 +41,14 @@ namespace Conversores
             // Dolar, Euro, Quetzal, Lempira, Cordova, Colon SV, Colon CR, Yenes, Rupias India, Libras Esterlinas
             double[][] monedas = {
                 new double[]{1, 0.92, 7.86, 24.62, 36.56, 8.75, 535.14, 145.52, 83.32, 0.79 },// Array Unidimencional
-                new double[] { }, // Masa
-                new double[] { }, // Masa
-                new double[] { 1, 1000, 100, 39.3701, 3.28084, 1.1963081929167, 1.0936, 0.001, 0.000621371 } // Longitud
+                new double[]{ 1, 1000, 1000000, 35.27396, 0.0009842065 }, // Masa
+                new double[]{ 1, 0.001, 0.001, 0.0353147, 61.023744 }, // Volumen
+                new double[] { 1, 1000, 100, 39.3701, 3.28084, 1.1963081929167, 1.0936, 0.001, 0.000621371 }, // Longitud
+                new double[]{ 1, 1000, 1000000, 60000000, 3600000000, 86400000000, 604800000000, 2628000000000, 31536000000000, 315360000000000, 31536000000000000 } // Tiempo
         };
             respuesta = monedas[cboTipoConversor.SelectedIndex][a] / monedas[cboTipoConversor.SelectedIndex][de] * cantidad;
             lblRespuestaConversor.Text = "Respueta: " + Math.Round(respuesta, 3);
+
 
         }
 
