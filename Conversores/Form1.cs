@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 // integrantes del equipo
 
-// Wilbert Jose Giron Perez
+// Wilbert José Girón Pérez
 // Andrea Margarita Hernandez Arevalo
 // Yaritza Marcela Jimenez Escobar
 // Josue David Morales Orellana
