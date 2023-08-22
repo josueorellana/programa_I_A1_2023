@@ -51,7 +51,7 @@ namespace Conversores
             new double[]{ 1, 0.002, 0.000001, 60000000, 3600000000, 86400000000, 604800000000, 2628000000000, 31536000000000, 315360000000000, 31536000000000000 } // Tiempo (Microsegundo como base)
         };
             respuesta = monedas[cboTipoConversor.SelectedIndex][a] / monedas[cboTipoConversor.SelectedIndex][de] * cantidad;
-            lblRespuestaConversor.Text = "Respueta: " + Math.Round(respuesta, 3);
+            lblRespuestaConversor.Text = "Respuesta: " + Math.Round(respuesta, 3);
 
 
 
