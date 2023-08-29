@@ -29,6 +29,8 @@ namespace Conversores
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblTipoConversor = new System.Windows.Forms.Label();
+            this.cboTipoConversor = new System.Windows.Forms.ComboBox();
             this.lblDeConversor = new System.Windows.Forms.Label();
             this.cboDeConversor = new System.Windows.Forms.ComboBox();
             this.lblAConversor = new System.Windows.Forms.Label();
@@ -38,8 +40,31 @@ namespace Conversores
             this.lblRespuestaConversor = new System.Windows.Forms.Label();
             this.btnConvertirConversor = new System.Windows.Forms.Button();
             this.lblTituloConversor = new System.Windows.Forms.Label();
-            this.lblTipoConversor = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // lblTipoConversor
+            // 
+            this.lblTipoConversor.AutoSize = true;
+            this.lblTipoConversor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoConversor.Location = new System.Drawing.Point(89, 54);
+            this.lblTipoConversor.Name = "lblTipoConversor";
+            this.lblTipoConversor.Size = new System.Drawing.Size(53, 24);
+            this.lblTipoConversor.TabIndex = 5;
+            this.lblTipoConversor.Text = "Tipo:";
+            this.lblTipoConversor.Click += new System.EventHandler(this.lblTipoConversor_Click);
+            // 
+            // cboTipoConversor
+            // 
+            this.cboTipoConversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoConversor.FormattingEnabled = true;
+            this.cboTipoConversor.Items.AddRange(new object[] {
+            "CONVERTIR MEDIDAS"});
+            this.cboTipoConversor.Location = new System.Drawing.Point(158, 54);
+            this.cboTipoConversor.Name = "cboTipoConversor";
+            this.cboTipoConversor.Size = new System.Drawing.Size(168, 21);
+            this.cboTipoConversor.TabIndex = 6;
+            this.cboTipoConversor.SelectedIndexChanged += new System.EventHandler(this.cboTipoConversor_SelectedIndexChanged);
+            this.cboTipoConversor.TextChanged += new System.EventHandler(this.cboTipoConversor_TextChanged);
             // 
             // lblDeConversor
             // 
@@ -57,12 +82,13 @@ namespace Conversores
             this.cboDeConversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDeConversor.FormattingEnabled = true;
             this.cboDeConversor.Items.AddRange(new object[] {
-            "pie cuadrado",
-            "vara cuadrada",
-            "metro cuadrado",
-            "tareas",
-            "manzanas",
-            "hectareas"});
+            "Hectareas",
+            "Metro cuadrado",
+            "Pie cuadrado",
+            "Yarda cuadrada",
+            "Vara cuadrada",
+            "Tareas",
+            "Manzanas"});
             this.cboDeConversor.Location = new System.Drawing.Point(158, 109);
             this.cboDeConversor.Name = "cboDeConversor";
             this.cboDeConversor.Size = new System.Drawing.Size(168, 21);
@@ -84,6 +110,14 @@ namespace Conversores
             // 
             this.cboAConversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboAConversor.FormattingEnabled = true;
+            this.cboAConversor.Items.AddRange(new object[] {
+            "Hectareas",
+            "Metro cuadrado",
+            "Pie cuadrado",
+            "Yarda cuadrada",
+            "Vara cuadrada",
+            "Tareas",
+            "Manzanas"});
             this.cboAConversor.Location = new System.Drawing.Point(158, 171);
             this.cboAConversor.Name = "cboAConversor";
             this.cboAConversor.Size = new System.Drawing.Size(168, 21);
@@ -113,7 +147,7 @@ namespace Conversores
             // 
             this.lblRespuestaConversor.AutoSize = true;
             this.lblRespuestaConversor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRespuestaConversor.Location = new System.Drawing.Point(304, 331);
+            this.lblRespuestaConversor.Location = new System.Drawing.Point(326, 331);
             this.lblRespuestaConversor.Name = "lblRespuestaConversor";
             this.lblRespuestaConversor.Size = new System.Drawing.Size(119, 24);
             this.lblRespuestaConversor.TabIndex = 13;
@@ -134,23 +168,12 @@ namespace Conversores
             // 
             this.lblTituloConversor.AutoSize = true;
             this.lblTituloConversor.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloConversor.Location = new System.Drawing.Point(224, 9);
+            this.lblTituloConversor.Location = new System.Drawing.Point(195, 9);
             this.lblTituloConversor.Name = "lblTituloConversor";
-            this.lblTituloConversor.Size = new System.Drawing.Size(87, 21);
+            this.lblTituloConversor.Size = new System.Drawing.Size(151, 21);
             this.lblTituloConversor.TabIndex = 15;
-            this.lblTituloConversor.Text = "Conversor";
+            this.lblTituloConversor.Text = "Conversor de area";
             this.lblTituloConversor.Click += new System.EventHandler(this.lblTituloConversor_Click);
-            // 
-            // lblTipoConversor
-            // 
-            this.lblTipoConversor.AutoSize = true;
-            this.lblTipoConversor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoConversor.Location = new System.Drawing.Point(89, 54);
-            this.lblTipoConversor.Name = "lblTipoConversor";
-            this.lblTipoConversor.Size = new System.Drawing.Size(53, 24);
-            this.lblTipoConversor.TabIndex = 5;
-            this.lblTipoConversor.Text = "Tipo:";
-            this.lblTipoConversor.Click += new System.EventHandler(this.lblTipoConversor_Click);
             // 
             // Conversor
             // 
@@ -166,6 +189,7 @@ namespace Conversores
             this.Controls.Add(this.lblAConversor);
             this.Controls.Add(this.cboDeConversor);
             this.Controls.Add(this.lblDeConversor);
+            this.Controls.Add(this.cboTipoConversor);
             this.Controls.Add(this.lblTipoConversor);
             this.Name = "Conversor";
             this.Text = "Form1";
@@ -176,6 +200,8 @@ namespace Conversores
         }
 
         #endregion
+        private System.Windows.Forms.Label lblTipoConversor;
+        private System.Windows.Forms.ComboBox cboTipoConversor;
         private System.Windows.Forms.Label lblDeConversor;
         private System.Windows.Forms.ComboBox cboDeConversor;
         private System.Windows.Forms.Label lblAConversor;
@@ -185,7 +211,6 @@ namespace Conversores
         private System.Windows.Forms.Label lblRespuestaConversor;
         private System.Windows.Forms.Button btnConvertirConversor;
         private System.Windows.Forms.Label lblTituloConversor;
-        private System.Windows.Forms.Label lblTipoConversor;
     }
 }
 

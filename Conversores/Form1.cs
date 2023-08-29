@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-// integrantes del equipo
-
-// Wilbert José Girón Pérez
-// Josue David Morales Orellana
 namespace Conversores
 {
     public partial class Conversor : Form
     {
 
         String[][] tiposConversores = new string[][]{
-            new string[] {"pie ciadrado", "vara cuadrada", "metro cuadrado", "tareas", "manzanas", "hectareas" }, // areas
-
+            new string[] {"Hectareas", "Metro cuadrado", "Pie cuadrado", "Yarda cuadrada", "Vara cuadrada", "Tareas", "Manzanas"}, //MEDIDAS
         };
 
         public Conversor()
@@ -43,13 +38,12 @@ namespace Conversores
             a = cboAConversor.SelectedIndex;
 
             cantidad = double.Parse(txtCantidadConversor.Text);
-            // pie ciadrado, vara cuadrada, metro cuadrado, tareas, manzanas, hectareas
-            double[][] monedas = {
-            new double[]{ 1, 0.111111, 0.092903, 0.00014774656489, 0.00001317, 9.29368029739777,}, // area
+          
+            double[][] area = {
+            new double[]{ 1, 10000, 107639, 11959.9, 14285.71, 15.90330789, 1.4196479273}, 
         };
-            respuesta = monedas[cboTipoConversor.SelectedIndex][a] / monedas[cboTipoConversor.SelectedIndex][de] * cantidad;
+            respuesta = area[cboTipoConversor.SelectedIndex][a] / area[cboTipoConversor.SelectedIndex][de] * cantidad;
             lblRespuestaConversor.Text = "Respuesta: " + Math.Round(respuesta, 3);
-
 
 
         }
@@ -62,11 +56,7 @@ namespace Conversores
         private void cboTipoConversor_TextChanged(object sender, EventArgs e)
         {
 
-            cboDeConversor.Items.Clear();
-            cboDeConversor.Items.AddRange(tiposConversores[cboTipoConversor.SelectedIndex]);
 
-            cboAConversor.Items.Clear();
-            cboAConversor.Items.AddRange(tiposConversores[cboTipoConversor.SelectedIndex]);
         }
 
         private void txtCantidadConversor_TextChanged(object sender, EventArgs e)

@@ -16,7 +16,7 @@ namespace Conversores
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Conversor())CDDDD;
+            Application.Run(new Conversor());
         }
     }
 }
