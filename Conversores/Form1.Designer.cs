@@ -58,7 +58,9 @@ namespace Conversores
             this.cboTipoConversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoConversor.FormattingEnabled = true;
             this.cboTipoConversor.Items.AddRange(new object[] {
-            "CONVERTIR MEDIDAS"});
+            "longitud",
+            "moneda",
+            "superficie"});
             this.cboTipoConversor.Location = new System.Drawing.Point(158, 54);
             this.cboTipoConversor.Name = "cboTipoConversor";
             this.cboTipoConversor.Size = new System.Drawing.Size(168, 21);
